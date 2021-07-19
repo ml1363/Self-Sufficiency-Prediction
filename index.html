@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Likelihood of Self-Sufficiency</title>
+    <style>
+        #image {
+            display: none;
+    </style>
+</head>
+<body>
+<p> <font size="5" color="#857437" face = "Verdana" >Welcome to Self-Sufficiency Prediction!</font></p><br>
+<form>
+    <p> <font size="5" color="#003057" >Program：</font><input type="radio" name="text" value="Housing Choice">Housing Choice
+        <input type="radio" name="text" value="Real Estate">Real Estate</p>
+</form>
+
+<form  ><font size="5" color="#003057" ><p> Family Size: </font><input style="width:110px;height:28px;font-size:12pt;" id = "FS" type="int" name="Family Size"> (eg:4)</p></form>
+<form name="myform"><p><font size="5" color="#003057" > Annual Income: </font><input style="width:110px;height:28px;font-size:12pt;" id = "AI" type="int" name="Annual Income"> (eg:40000)</p></form>
+<form><p> <font size="5" color="#003057" >Annual Rent: </font><input style="width:110px;height:28px;font-size:12pt;" id = "AR" type="int" name="Annual Rent">（how much paid for rent in a year?
+    eg:3000） </p></form>
+<form><p> <font size="5" color="#003057" >Household work hours per week: </font><input style="width:110px;height:28px;font-size:12pt;" id = "WH" type="int" name="Household work hours per week"> (how many total work hours in the household in a week? eg:40)
+</p></form>
+<br>
+</form>
+<button type="button" onclick="resShow()"><font size="5" color="#857437" >Predict</font></button>
+<script type="text/javascript">
+    function resShow() {
+        var a = myform.AI.value;
+        if (a>=90000){
+            alert("Congratulation! You are ready to graduate！")
+
+        }
+        else{
+            alert("Sorry! Please keep up the good work!")
+        }
+    }
+</script>
+<div class="row">
+  <div class="column">
+    <img src="OIP (1).jfif" alt="AH" style="width:130px;height:75px; margin:0px 0px 0px 480px;/> 
+  </div>
+  <div class="column">
+    <img src="OIP.jfif" alt="GT" style="width:120px;height:70px; margin:-100px -100px 0px 0px;>
+  </div>
+     
+     
+    
+</div>
+<div>
+    <img src="https://xzhou0.github.io/KIPP/lables.png" id="image0" alt="result0" style='display:none'/>
+</div>
+<div>
+    <img src="https://xzhou0.github.io/KIPP/lables1.png" id="image1" alt="result1" style='display:none'/>
+</div>
+<div>
+    <img src="https://xzhou0.github.io/KIPP/lables2.png" id="image2" alt="result2" style='display:none'/>
+</div>
+<div>
+    <img src="https://xzhou0.github.io/KIPP/lables3.png" id="image3" alt="result0" style='display:none'/>
+</div>
+<div>
+    <img src="https://xzhou0.github.io/KIPP/lables4.png" id="image4" alt="result0" style='display:none'/>
+</div>
+<div>
+    <img src="https://xzhou0.github.io/KIPP/lables5.png" id="image5" alt="result0" style='display:none'/>
+</div>
+
+
+
+</body>
+</html>
