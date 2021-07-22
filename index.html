@@ -17,7 +17,7 @@
 
 <form  ><font size="5" color="#003057" ><p> Family Size: </font><input style="width:110px;height:28px;font-size:12pt;" id = "FS" type="int" name="Family Size"> (eg:4)</p></form>
 <form name="myform"><p><font size="5" color="#003057" > Annual Income: </font><input style="width:110px;height:28px;font-size:12pt;" id = "AI" type="int" name="Annual Income"> (eg:40000)</p></form>
-<form><p> <font size="5" color="#003057" >Annual Rent: </font><input style="width:110px;height:28px;font-size:12pt;" id = "AR" type="int" name="Annual Rent">（how much paid for rent in a year?
+<form name="myform1"><p> <font size="5" color="#003057" >Annual Rent: </font><input style="width:110px;height:28px;font-size:12pt;" id = "AR" type="int" name="Annual Rent">（how much paid for rent in a year?
     eg:3000） </p></form>
 <form><p> <font size="5" color="#003057" >Household work hours per week: </font><input style="width:110px;height:28px;font-size:12pt;" id = "WH" type="int" name="Household work hours per week"> (how many total work hours in the household in a week? eg:40)
 </p></form>
@@ -27,12 +27,13 @@
 <script type="text/javascript">
     function resShow() {
         var a = myform.AI.value;
-        if (a>=90000){
+        var b = myform1.AR.value;
+        if (0.6*a>b && a>20000 ){
             alert("Congratulation! You are ready to graduate！")
 
         }
         else{
-            alert("Sorry! Please keep up the good work!")
+            alert("Sorry! You're not qualified for graduation!")
         }
     }
 </script>
